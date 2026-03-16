@@ -22,3 +22,24 @@
 3. **모델 고도화 전략**:
     - **과감한 피처 다이어트 (Feature Selection)**: 중요도가 낮은 변수를 제거하여 모델의 복잡도를 낮추고 일반화 성능 향상
     - **얕은 나무 가설 (Shallow Tree Hypothesis) 검증**: 과적합(Overfitting) 방지를 위해 의도적으로 트리의 깊이를 제한하여 성능 변화 관찰
+
+
+하이퍼파라미터 최적화 및 모델 학습 (2026-03-16)
+1. Optuna를 활용한 하이퍼파라미터 튜닝
+목적: LightGBM 모델의 성능을 극대화하기 위한 최적의 파라미터 조합 도출
+
+주요 튜닝 파라미터: learning_rate, n_estimators, max_depth, num_leaves, feature_fraction 등
+
+평가 지표: AUC (Area Under the Curve)를 기준으로 최적화 진행
+
+2. 최적 레시피 적용 및 재학습
+방법: Optuna가 찾은 best_params를 모델에 적용하여 전체 트레이닝 데이터셋에 대해 재학습 실시
+
+검증 전략: Stratified K-Fold(n_splits=5)를 사용하여 모델의 안정성과 일반화 성능 확보
+
+결과: 튜닝된 파라미터를 기반으로 최종 예측 확률(probability) 계산 및 제출용 CSV 파일 생성 완료
+
+3. 향후 고도화 전략 (실험 가설)
+피처 경량화 (Feature Diet): 변수 중요도(Feature Importance) 분석을 통해 영향력이 낮은 변수를 과감히 제거하여 모델의 연산 효율성과 해석력 증대
+
+얕은 나무 가설 (Shallow Tree Hypothesis): 복잡한 데이터 특성을 고려하여 트리의 깊이를 의도적으로 제한(Shallower depth)함으로써 과적합을 방지하고 테스트 데이터에 대한 복원력 강화
