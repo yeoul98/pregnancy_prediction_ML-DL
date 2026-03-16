@@ -3,7 +3,6 @@ data/*.csv
 train.csv
 models/*.pkl
 models/*.joblib
-
 # 파이썬 캐시
 __pycache__/
 *.py[cod]
@@ -13,7 +12,8 @@ __pycache__/
 .venv/
 env/
 venv/
-
+# 제출
+제출/
 # uv 관련
 .uv/
 
