@@ -1,0 +1,34 @@
+# Data files (Exclude large CSV files)
+data/*.csv
+test.csv
+train.csv
+sample_submission.csv
+*.csv
+데이터_명세.xlsx
+
+# Model & Intermediate files (Exclude large binaries)
+results/*.npy
+*.npy
+catboost_info/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Documentation & Version files (Include these)
+!README.md
+!final_report.md
+!versions/
+!versions/**
