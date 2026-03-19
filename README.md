@@ -3,6 +3,15 @@
 난임 시술 성공 여부 예측을 위한 머신러닝 파이프라인 프로젝트입니다. 
 데이터 전처리부터 최첨단 앙상블 기법(Stacking, Optuna, Null Importance)까지의 발전 과정을 담고 있습니다.
 
+## 👥 Team Members (3)
+
+| Name | Role | Responsibility |
+|------|------|---------------|
+| 박세준 | Team Lead | EDA, ML(LightGBM, tuning) |
+| 홍석현 | Team member | ML(LightGBM, tuning) |
+| 김영진 | Team member | ML(LightGBM, Catboost, tuning), DL |
+
+
 ## 📁 Repository Structure
 
 - `versions/`: 버전별 소스 코드 및 각 단계의 제출 파일
