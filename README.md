@@ -13,6 +13,12 @@
 - `data/`: 원본 데이터 (train.csv, test.csv, 데이터 명세)
 - `results/`: 중간 생성물 (.npy) 및 성능 지표
 
+## ⚙️ 설치
+
+```bash
+pip install -r requirements.txt
+```
+
 ## 🚀 Performance Summary
 
 | Version | OOF AUC | Strategy | Status |
