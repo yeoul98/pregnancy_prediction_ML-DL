@@ -36,7 +36,7 @@ from model import IVFModel
 CONFIG = {
     'seed':              42,
     'batch_size':        256,
-    'epochs':            20,
+    'epochs':            50, #수정
     'lr':                1e-3,
     'weight_decay':      1e-4,
     'val_ratio':         0.2,
